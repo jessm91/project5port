@@ -1,0 +1,155 @@
+* {
+    font-family: Arial;
+}
+
+:root {
+    --primary-color: #20b2aa;
+    --secondary-color: #b19cd9;
+    --tertiary-color: #D99294;
+    --quaternary-color: #779ecb;
+}
+
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 56px;
+    padding-top: 100px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+h2 {
+    color: var(--quaternary-color);
+    text-align: right;
+    margin: 15px;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 36px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin: 7px 0;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar a {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: var(--tertiary-color);
+}
+
+#navbar a:hover {
+    color: var(--quaternary-color);
+    font-weight: bold;
+}
+
+.container {
+    margin: 5px;
+    padding: 35px 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    border-right: 5px solid var(--primary-color);
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    margin: 100px;
+    padding-right: 350px;
+}
+
+#contactLink a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 15px;
+}
+
+#contactLink a:hover {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#contactLink ul {
+    text-decoration: none;
+    text-align: left;
+}
+
+#contactLink li {
+    display: inline-block;
+}
+
+.collabproject-tile {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    flex: 1 1 1;
+    height: 100px;
+    color: var(--quaternary-color);
+    font-weight: bold;
+}
+
+.collabproject-tile a {
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.collabproject-tile a:hover {
+    color: var(--secondary-color);
+    opacity: .5;
+}
+
+img {
+    height: 40%; 
+    width: auto; 
+    max-width: 250px; 
+    max-height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img:hover {
+    opacity: .5;
+}
