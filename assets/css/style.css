@@ -89,7 +89,6 @@ nav {
     flex-basis: 100%;
     flex: 2;
     margin: 100px;
-    padding-right: 350px;
 }
 
 #contactLink a {
@@ -117,11 +116,6 @@ nav {
 
 .cert-tile, .project-tile, .collabproject-tile {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: left;
-    flex: 1 1 1;
-    height: 100px;
     color: var(--quaternary-color);
     font-weight: bold;
 }
@@ -135,6 +129,11 @@ nav {
 .cert-tile a:hover, .project-tile a:hover, .collabproject-tile a:hover {
     color: var(--secondary-color);
     opacity: .5;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
 }
 
 img {
