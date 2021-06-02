@@ -9,6 +9,11 @@
     --quaternary-color: #779ecb;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+}
+
 h1 {
     color: var(--primary-color);
     text-align: center;
@@ -36,25 +41,36 @@ a {
     text-decoration: none;
 }
 
-nav {
+#navbar {
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+nav {
     background-color: white;
 }
 
 #navbar ul {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar li {
+    display: inline-block;
 }
 
 #navbar a {
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
     text-decoration: none;
-    padding: 16px 22px;
+    padding: 0px 20px;
     color: var(--tertiary-color);
-    float: right;
-    margin: auto;
 }
 
 #navbar a:hover {
