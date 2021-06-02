@@ -9,11 +9,6 @@
     --quaternary-color: #779ecb;
 }
 
-body {
-    height: 100%;
-    width: 100%;
-}
-
 h1 {
     color: var(--primary-color);
     text-align: center;
@@ -150,7 +145,17 @@ img:hover {
 }
 
 @media screen and (max-width: 800px) {
+#navbar a {
+    padding: 0px 48px;
+}
 
+img {
+    height: 30%; 
+    width: auto; 
+}
+
+.cert-tile a, .project-tile a, .collabproject-tile a {
+    font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
