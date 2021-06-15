@@ -145,17 +145,40 @@ img:hover {
 }
 
 @media screen and (max-width: 800px) {
-#navbar a {
-    padding: 0px 48px;
+
+#navbar ul {
+    justify-content: flex-start;
+}
+
+h2 {
+    margin: 0;
 }
 
 img {
     height: 30%; 
-    width: auto; 
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+    
 }
 
 .cert-tile a, .project-tile a, .collabproject-tile a {
-    font-size: 16px;
+    font-size: 15px;
+}
+
+.cert-tile a, .project-tile a, .collabproject-tile a {
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#welcome-section, #certificates, #projects, #collaborative-projects, #contact {
+    height: 50vh;
+    width: 100%;
+}
+
+.wrapper {
+    overflow-wrap: break-word;
 }
 
 @media screen and (max-width: 600px) {
